@@ -13,7 +13,7 @@ module "postgresql-db" {
   user_password ="1234"
 
   ip_configuration = {
-    ipv4_enabled        = true
+    ipv4_enabled        = false 
     private_network     = "projects/devtools-317213/global/networks/test-postgre-connection" #shared vpc network self link i.e host project self link
     require_ssl         = true
     authorized_networks = []
