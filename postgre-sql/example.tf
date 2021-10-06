@@ -1,9 +1,9 @@
 module "postgresql-db" {
   source               = "GoogleCloudPlatform/sql-db/google//modules/postgresql"
-  name                 = "test_postgre_00"
+  name                 = "test-postgre-00"
   random_instance_name = true
   database_version     = "POSTGRES_9_6"
-  db_name              = "test_db_00"
+  db_name              = "test-db-00"
   project_id           = "devtools-317213"
   zone                 = "us-central1-c"
   region               = "us-central1"
